@@ -41,11 +41,12 @@ export default class Stack<T> {
   //Método que permite quitar el "primer elemento", haciendo que el siguiente sea el nuevo "primer elemento". Si no hay nada, devuelve un mensaje alertando que ya estaba vacía
   pop() {
     if (!this.isEmpty()) {
-
+      let deletedElement = this.topElement;
       this.topElement = this.topElement!.getNextNode();
       this.size--;
-      return;
+      return deletedElement;
     }
     console.log("The stack is empty");
+    return null
   }
 }

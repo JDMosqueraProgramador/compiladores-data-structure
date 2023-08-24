@@ -1,2 +1,3 @@
-import './queue.executer';
-import './list.executer';
+import './queue.example';
+import './list.example';
+import './stack.examples'
