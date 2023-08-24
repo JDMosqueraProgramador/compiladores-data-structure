@@ -1,5 +1,5 @@
 export class Node<T> {
-  private nextNode: Node<T>;
+  private nextNode: Node<T> | null = null;
 
   constructor(private data: T) { }
 
@@ -11,7 +11,7 @@ export class Node<T> {
     return this.nextNode;
   }
 
-  setNextNode(nextNode: Node<T>) {
+  setNextNode(nextNode: Node<T> | null) {
     this.nextNode = nextNode;
   }
 
