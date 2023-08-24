@@ -24,7 +24,7 @@ import { Node } from "./node"
    getDataResult() {
      if (!this.isEmpty()) {
        let aux = this.topElement;
-       let result = [];
+       let result:T[] = [];
        for (let index = 0; index < this.size; index++) {
          result.push(aux!.getData());
          aux = aux!.getNextNode();
